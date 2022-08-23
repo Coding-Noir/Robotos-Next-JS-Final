@@ -1,0 +1,46 @@
+.get-robots {
+    position: relative;
+    padding: 120px 24px 180px;
+    background-color: var(--yellow-2);
+    background-image: url(../public/images/get-robots-bg.png);
+    background-position: center;
+    background-attachment: fixed;
+
+    .get-robot-card {
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 58px 58px 32px;
+        border: 8px solid var(--dark-grey);
+        border-radius: 24px;
+        background-color: var(--white);
+        box-shadow: -3px 3px 0 0 var(--dark-grey);
+        text-align: center;
+
+        .get-robot-card-head-img {
+            height: 200px;
+            width: 200px;
+            margin: -120px auto 16px;
+
+            img {
+                border-radius: 50%;
+                border: 5px solid #000 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .get-robots {
+        padding: 100px 20px;
+        background-attachment: scroll;
+    }
+
+    .get-robots .get-robot-card .get-robot-card-head-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .get-robots .get-robot-card {
+        padding: 58px 20px;
+    }
+}

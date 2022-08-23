@@ -1,0 +1,13 @@
+.inventory-area {
+    position: relative;
+    border-radius: 8px;
+    padding: 12px 16px;
+    line-height: 1.6;
+    font-size: 1.44rem;
+    display: inline-block;
+    text-align: center;
+
+    .inventory-num {
+        font-weight: 700;
+    }
+}

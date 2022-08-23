@@ -1,0 +1,25 @@
+.footer {
+    text-align: center;
+    padding: 80px 16px;
+    background-color: var(--dark-grey);
+    color: var(--white);
+
+    .domo-text {
+        font-family: var(--heading-font);
+        font-size: 16vw;
+        line-height: 0.8;
+        transition: var(--transition);
+
+        &:hover {
+            color: var(--yellow);
+        }
+
+        &.purple {
+            margin-bottom: 55px;
+
+            &:hover {
+                color: var(--purple-3);
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.intermission {
+    background-color: var(--dark-grey);
+    margin-bottom: -100px;
+
+    .image-row {
+        position: relative;
+        top: -100px;
+        display: flex;
+
+        &._2 {
+            margin-top: -100px;
+            margin-bottom: -150px;
+        }
+
+        &._3 {
+            margin-top: -100px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intermission {
+        display: none;
+    }
+}

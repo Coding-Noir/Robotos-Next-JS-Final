@@ -1,0 +1,168 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "Right Grotesk";
+    src: url('../assets/fonts/PPRightGrotesk-SpatialBlack.eot');
+    src: url('../assets/fonts/PPRightGrotesk-SpatialBlack.woff') format("woff"),
+        url('../assets/fonts/PPRightGrotesk-SpatialBlack.woff2') format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+// Variables
+
+:root {
+    --black: #000;
+    --grey: #f3f2ed;
+    --dark-grey: #1f2024;
+    --white: #fff;
+    --pink: #ff3979;
+    --pink-2: #ff2cb2;
+    --pink-3: #ff00a1;
+    --pink-4: #ff55a2;
+    --red: #eb0d18;
+    --red-2: #ec0f18;
+    --red-3: #ff0d11;
+    --yellow: #eedf39;
+    --yellow-2: #f9e174;
+    --blue: #5879ff;
+    --blue-2: #5100ff;
+    --blue-3: #163892;
+    --purple: #672fcf;
+    --purple-2: #461a97;
+    --purple-3: #a774f9;
+    --baby-blue: #cae9fa;
+    --mint: #ace5d7;
+    --magenta: #e42c7f;
+
+    --body-font: 'Space Mono', monospace, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    --heading-font: "Right Grotesk";
+
+    --transition: all .3s ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 72px;
+}
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+p {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 40px;
+
+    li {
+        padding-bottom: 8px;
+    }
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style: auto;
+}
+
+strong {
+    font-weight: 700;
+    display: inline-block;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: var(--heading-font);
+    font-size: 4.8rem;
+    line-height: 5.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.red {
+    background-color: var(--red-2);
+    color: var(--white);
+}
+
+.grey-bg {
+    background-color: var(--grey);
+    color: rgba(31, 32, 36, 0.8);
+}
+
+.page {
+    min-height: 60vh;
+
+    .page-container {
+        padding: 58px 58px 32px;
+        max-width: 1200px;
+        border: 8px solid var(--dark-grey);
+        border-radius: 24px;
+        box-shadow: -3px 3px 0 0 var(--dark-grey);
+        margin: 0 auto;
+        background-color: var(--white);
+
+    }
+}
+
+.page-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    .section-title {
+        font-size: 4rem;
+        line-height: 4.7rem;
+    }
+
+    .page .page-container {
+        padding: 58px 20px;
+    }
+}

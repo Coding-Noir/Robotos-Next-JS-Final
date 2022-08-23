@@ -1,0 +1,27 @@
+[
+  {
+    "title": "9,999",
+    "text": "Total Robots",
+    "id": 1
+  },
+  {
+    "title": "Common",
+    "text": "Robotos",
+    "id": 2
+  },
+  {
+    "title": "Less Common",
+    "text": "Helmetos",
+    "id": 3
+  },
+  {
+    "title": "Rare",
+    "text": "Computos",
+    "id": 4
+  },
+  {
+    "title": "Super Rare",
+    "text": "Cyborgos",
+    "id": 5
+  }
+]
